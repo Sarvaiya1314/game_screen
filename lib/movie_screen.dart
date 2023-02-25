@@ -269,6 +269,71 @@ class _MovieScreenState extends State<MovieScreen> {
                       ),
                     ),
                     Padding(
+                      padding: const EdgeInsets.only(top: 45),
+                      child: Row(
+                        children: [
+                          const Padding(
+                            padding: EdgeInsets.only(left: 20),
+                            child: ClipContainer(
+                              backgroundimage: 'assets/images/fi.png',
+                              image: 'assets/images/playb.png',
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 15),
+                            child: Container(
+                              height: 120,
+                              width: 135,
+                              color: Colors.transparent,
+                              child: Column(
+                                children: [
+                                  const Padding(
+                                    padding: EdgeInsets.only(right: 40, top: 5),
+                                    child: Text(
+                                      'Episode 1 · 39m',
+                                      style: TextStyle(fontSize: 13, color: Color(0x99EBEBF5)),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5),
+                                    child: Row(
+                                      children: [
+                                        const Text(
+                                          'The Mandlorian ',
+                                          style: TextStyle(fontWeight: FontWeight.w500, color: Colors.white),
+                                        ),
+                                        Container(
+                                          height: 15,
+                                          width: 15,
+                                          color: Colors.transparent,
+                                          child: Image.asset('assets/images/downb.png'),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 35, right: 95),
+                                    child: Container(
+                                      alignment: Alignment.centerLeft,
+                                      height: 40,
+                                      width: 40,
+                                      decoration: BoxDecoration(color: const Color(0x1AE5E5E5), borderRadius: BorderRadius.circular(35)),
+                                      child: const Center(
+                                        child: Icon(
+                                          Icons.arrow_downward,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
                       padding: const EdgeInsets.only(top: 10),
                       child: Row(
                         children: [
